@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Dropdown Arrow</title>
+    <style>
+        .custom-select {
+            -webkit-appearance: none; /* Hides default dropdown arrow in WebKit browsers */
+            -moz-appearance: none; /* Hides default dropdown arrow in Firefox */
+            appearance: none; /* Hides default dropdown arrow in other browsers */
+            background: none; /* Removes default background */
+            padding: 10px; /* Adds padding for the dropdown */
+            border: 1px solid #ccc; /* Adds a border */
+            font-size: 16px; /* Sets the font size */
+        }
+
+        .custom-select-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
+        .custom-select-wrapper::after {
+            content: ''; /* Empty content */
+            position: absolute;
+            top: 50%;
+            right: 10px; /* Adjust the position as needed */
+            width: 0;
+            height: 0;
+            pointer-events: none; /* Prevents pointer events */
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid #000; /* Adds a custom arrow */
+            transform: translateY(-50%); /* Centers the arrow vertically */
+        }
+    </style>
+</head>
+<body>
+    <div class="custom-select-wrapper">
+        <select class="custom-select">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </select>
+    </div>
+</body>
+</html>

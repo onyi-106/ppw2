@@ -1,0 +1,73 @@
+body {
+    background-color: rgb(255, 230, 183);
+}
+
+.custom-brand {
+    color: orange;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+.custom-brand:hover {
+    color: orange;
+}
+
+.btn-search {
+    background-color: orange;
+    outline: none;
+    /* border: gray solid 1px; */
+    color: white;
+    border-radius: 50rem;
+
+}
+.btn-search:hover {
+    background-color: rgb(255, 191, 73);
+    color: white;
+}
+.btn-search:focus {
+    box-shadow: none;
+}
+
+.search-bar {
+    border-radius: 50rem;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+}
+.search-bar:focus {
+    background-color: rgb(255, 255, 255);
+    box-shadow: none;
+}
+
+.btn-login {
+    width: 90px;
+    background-color: orange;
+    color: white;
+    border: none;
+    font-weight: 600;
+}
+.btn-login:focus {
+    background-color: orange;
+    box-shadow: none;
+}
+.btn-login:hover {
+    background-color: rgb(255, 191, 73);
+    color: white;
+
+}
+
+.btn-signup {
+    width: 90px;
+    background-color: white;
+    color: orange;
+    border: orange solid 1px;
+    font-weight: 600;
+    
+}
+.btn-signup:hover {
+    background-color: rgb(255, 230, 183);
+    border: orange solid 1px;
+    color: orange;
+}
+.btn-signup:focus {
+    box-shadow: none;
+}

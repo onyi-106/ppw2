@@ -1,0 +1,1855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .cards {
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .profile-pic {
+            background-color: rgb(219, 219, 219);
+            width: 40px;
+            height: 40px;
+        }
+
+        .btn-dropdown {
+            background-color: white;
+            border: none;
+            border-top-right-radius: 0.375rem !important;
+            border-bottom-right-radius: 0.375rem !important;
+        }
+
+        .card:hover {
+            cursor: pointer;
+
+            transform: translateY(-4px);
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <!-- <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script> -->
+    <nav class="navbar sticky-top shadow navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid justify-content-center align-items-center">
+            <div class="row w-100 justify-content-center align-items-center">
+
+                <div class="col d-flex w-100 h-100 justify-content-center align-items-center">
+                    <a href="index2.html" class="custom-brand me-0 fw-bold font-monospace fs-2">ashtray.</a>
+                </div>
+
+                <div class="col search-bar w-100 h-100 shadow-sm p-0 mt-1 mb-1">
+                    <div class="input-group">
+                        <button class="btn btn-search d-flex justify-content-center align-items-center" type="button"
+                            id="button-search">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg>
+                        </button>
+                        <input type="text" class="form-control search-bar" placeholder="Search...">
+                    </div>
+                </div>
+                <div class="col login-signup w-100 h-100">
+                    <div class="container d-flex justify-content-evenly align-items-center">
+                        <a href="profile.html" class="btn btn-login w-auto">
+                            <div class="d-flex">
+                                <img class="rounded-circle border border-2 border-white" src="pic/i88zgr0axtta1.jpg" alt="" style="width: 25px; height: 25px;">
+                                <p class="mb-0 ms-2 me-2">onyi</p>
+                            </div>
+                        </a>
+                        <div class="dropdown">
+                            <button class="btn btn-dropdown btn-light d-flex p-1" id="dropdown-dot" data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                                </svg>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown-dot">
+                                <li><a class="dropdown-item active" href="login.html">Sign Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!--end of Navigation bar-->
+
+
+
+    <div class="container cards shadow mt-5 mb-4">
+        <div class="row row-cols-4 g-4">
+
+            <!-- <div class="col p-3 mt-0">
+                <div class="card">
+                    <img src="placeholder img.png" class="card-img-top" alt="...">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end align-items-start">
+                        <h6 class="card-title fw-bold">Title</h6>
+                        <p class="card-text" id="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, necessitatibus.</p>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/aff.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">me n gang #cat #funny</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto mt-4" src="pic/i88zgr0axtta1.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">onyi</small>
+                                <small class="id mb-0">#1284</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">1.9k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">5.2k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/garam.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">YAK #amba #ngawi</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/neko.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">grimace</small>
+                                <small class="id mb-0">#3845</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">2.1k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">9.4k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/jim.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">jimmy on the loose</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/jong.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">fwaeehh</small>
+                                <small class="id mb-0">#2756</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">7.2k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">82k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/shadow.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">shadow the sikma #sonic #shadow</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/shadow.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">son1c</small>
+                                <small class="id mb-0">#8351</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">2.4k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">9.1k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/shhh.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">SHHHHHHHHH</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/guts.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">gut$</small>
+                                <small class="id mb-0">#9126</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">3.2k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">17k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/jong.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">kim jong unch :3</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/gokushhhhhhhhhhhh.gif" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">goakue</small>
+                                <small class="id mb-0">#8713</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">19k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">32k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/green fn.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">GREEN FN #meme #fortnite</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/sunshine.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">asigma</small>
+                                <small class="id mb-0">#8327</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">500</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">1.2k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/catos.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">devourer of worlds.....</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/ikan.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">skbidy</small>
+                                <small class="id mb-0">#3217</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">38k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">321k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/freaky.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">freaky anwar 😜😜</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/rio.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">skeleton</small>
+                                <small class="id mb-0">#3264</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">4.3k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">7.6k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/gokushhhhhhhhhhhh.gif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">HUSH #dbz</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/freaky.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">dbzn1</small>
+                                <small class="id mb-0">#3621</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">31k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">132k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/knight.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">me n who #soulsborne</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/joker.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">vyke</small>
+                                <small class="id mb-0">#1379</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">2k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">5.2k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/joker.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">rawr -joker</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/catos.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">layylayy</small>
+                                <small class="id mb-0">#1732</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">391</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">1.2k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/aff.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">me n gang #cat #funny</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto mt-4" src="pic/i88zgr0axtta1.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">onyi</small>
+                                <small class="id mb-0">#1284</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">1.9k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">5.2k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/garam.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">YAK #amba #ngawi</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/neko.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">grimace</small>
+                                <small class="id mb-0">#3845</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">2.1k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">9.4k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/jim.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">jimmy on the loose</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/jong.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">fwaeehh</small>
+                                <small class="id mb-0">#2756</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">7.2k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">82k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/shadow.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">shadow the sikma #sonic #shadow</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/shadow.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">son1c</small>
+                                <small class="id mb-0">#8351</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">2.4k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">9.1k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/shhh.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">SHHHHHHHHH</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/guts.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">gut$</small>
+                                <small class="id mb-0">#9126</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">3.2k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">17k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/jong.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">kim jong unch :3</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/gokushhhhhhhhhhhh.gif" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">goakue</small>
+                                <small class="id mb-0">#8713</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">19k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">32k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/green fn.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">GREEN FN #meme #fortnite</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/sunshine.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">asigma</small>
+                                <small class="id mb-0">#8327</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">500</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">1.2k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/catos.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">devourer of worlds.....</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/ikan.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">skbidy</small>
+                                <small class="id mb-0">#3217</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">38k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">321k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/freaky.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">freaky anwar 😜😜</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/rio.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">skeleton</small>
+                                <small class="id mb-0">#3264</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">4.3k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">7.6k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/gokushhhhhhhhhhhh.gif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">HUSH #dbz</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/freaky.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">dbzn1</small>
+                                <small class="id mb-0">#3621</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">31k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">132k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/knight.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">me n who #soulsborne</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/joker.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">vyke</small>
+                                <small class="id mb-0">#1379</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">2k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">5.2k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/joker.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">rawr -joker</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/catos.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">layylayy</small>
+                                <small class="id mb-0">#1732</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">391</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">1.2k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/aff.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">me n gang #cat #funny</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto mt-4" src="pic/i88zgr0axtta1.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">onyi</small>
+                                <small class="id mb-0">#1284</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">1.9k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">5.2k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/garam.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">YAK #amba #ngawi</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/neko.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">grimace</small>
+                                <small class="id mb-0">#3845</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">2.1k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">9.4k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/jim.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">jimmy on the loose</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/jong.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">fwaeehh</small>
+                                <small class="id mb-0">#2756</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">7.2k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">82k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/shadow.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">shadow the sikma #sonic #shadow</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/shadow.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">son1c</small>
+                                <small class="id mb-0">#8351</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">2.4k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">9.1k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/shhh.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">SHHHHHHHHH</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/guts.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">gut$</small>
+                                <small class="id mb-0">#9126</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">3.2k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">17k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/jong.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">kim jong unch :3</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/gokushhhhhhhhhhhh.gif" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">goakue</small>
+                                <small class="id mb-0">#8713</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">19k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">32k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/green fn.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">GREEN FN #meme #fortnite</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/sunshine.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">asigma</small>
+                                <small class="id mb-0">#8327</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">500</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">1.2k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/catos.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">devourer of worlds.....</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/ikan.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">skbidy</small>
+                                <small class="id mb-0">#3217</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">38k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">321k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/freaky.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">freaky anwar 😜😜</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/rio.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">skeleton</small>
+                                <small class="id mb-0">#3264</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">4.3k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">7.6k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/gokushhhhhhhhhhhh.gif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">HUSH #dbz</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/freaky.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">dbzn1</small>
+                                <small class="id mb-0">#3621</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">31k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">132k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/knight.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">me n who #soulsborne</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/joker.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">vyke</small>
+                                <small class="id mb-0">#1379</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">2k</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">5.2k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3 mt-0">
+                <div class="card h-100">
+                    <img src="pic/joker.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"></h5>
+                        <p class="card-text">rawr -joker</p>
+
+                        <div class="container d-flex justify-content-start align-items-center p-0">
+
+                            <!-- Profile Pic -->
+                            <div class="profile-pic d-flex justify-content-center align-items-center rounded-circle overflow-hidden">
+                                <img class="w-100 h-auto" src="pic/catos.jpg" alt="">
+                            </div>
+
+                            <div class="user-detail d-flex flex-column ms-2 fs-6">
+                                <small class="username mb-0 fw-bold">layylayy</small>
+                                <small class="id mb-0">#1732</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex">
+                            <div class="d-flex">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">391</p></div>
+                            </div>
+
+                            <div class="d-flex ms-3">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+                                </div>
+                                <div><p class="mb-0 ms-1">1.2k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- <script>
+        function truncateText(elementId, wordLimit) {
+            const element = document.getElementById(elementId);
+            const text = element.innerText;
+            const words = text.split(' ');
+
+            if (words.length > wordLimit) {
+                const truncatedText = words.slice(0, wordLimit).join(' ') + '...';
+                element.innerText = truncatedText;
+            }
+        }
+
+        truncateText('card-desc', 8);
+    </script> -->
+
+    <script>
+        function truncateText(classSelector, charLimit) {
+            const elements = document.querySelectorAll(classSelector);
+
+            elements.forEach(element => {
+                const text = element.innerText;
+
+                if (text.length > charLimit) {
+                    const truncatedText = text.slice(0, charLimit) + '...';
+                    element.innerText = truncatedText;
+                }
+            });
+        }
+
+        truncateText('.card-text', 60);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
